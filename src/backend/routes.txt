@@ -1,0 +1,160 @@
+# Создать заявку +
+POST /api/task/create
+body {
+    name: str,
+    description: str,
+    status: id,
+    date: str,
+    files: [], -
+    user_id: id,
+    contractor_id: id
+}
+
+return {
+    task_id: int
+}
+
+
+
+# Получить заявку по айди +
+GET /api/task/get
+body {
+    task_id: int
+}
+
+return {
+    name: str,
+    description: str,
+    status: id,
+    date: str,
+    files: [], -
+    user_id: id,
+    contractor_id: id
+}
+
+
+
+# Получить заявки по юзеру +
+GET /api/task/by_user
+body {
+    user_id: id
+}
+
+return {
+    task_ids: []
+}
+
+
+
+# Получить заявки по исполнителю +
+GET /api/task/by_contractor
+body {
+    contractor_id: int
+}
+
+return {
+    task_ids: []
+}
+
+
+
+# Изменить статус заявки
+POST /api/status/set
+body {
+    task_id: int,
+    status_id: id
+}
+
+success:
+    return {
+        result: str
+    }
+fail:
+    return {
+        error: str
+    }
+
+
+
+# Получить статус по айди
+GET /api/status/by_id
+body {
+    status_id: int
+}
+
+return {
+    name: str
+}
+
+
+
+# Получить пользователя
+GET /api/user/get
+body {
+    id: int
+}
+
+result {
+    name: str,
+    role: id
+}
+
+
+
+# Авторизация
+POST /api/auth/login
+body {
+    login: str,
+    passhash: str
+}
+
+success:
+    return {
+        token: str
+    }
+fail:
+    return {
+        error: str
+    }
+
+
+
+# Добавить исполнителя
+POST /api/user/add
+body {
+    name: str,
+    role: id
+}
+
+success:
+    return {
+        result: str
+    }
+fail:
+    return {
+        error: str
+    }
+
+
+
+# Получить роль
+GET /api/role/get
+body {
+    name: int
+}
+
+return {
+    id: str  
+}
+
+
+
+# Установить роль
+POST /api/role/set
+body {
+    id: str
+}
+
+return {
+    result: str
+}

@@ -1,0 +1,34 @@
+tasks
+    id: int
+    name: str
+    description: str
+    user: id 
+    contractor: id
+    date: str
+    status: id
+
+
+files:
+    id: int
+    task_id: id
+    path: str
+
+        *folders*:
+            task_id
+                file
+
+
+users:
+    id: int
+    name: str
+    role: id
+
+
+roles:
+    id: int
+    name: str
+
+
+statuses:
+    id: int
+    name: str

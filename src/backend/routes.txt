@@ -76,19 +76,24 @@ fail:
 
 
 
-# Получить статус по айди
-GET /api/status/by_id
+# Добавить статус
+POST /api/status/add
 body {
-    status_id: int
+    status_name: str
 }
 
-return {
-    name: str
-}
+success:
+    return {
+        result: str
+    }
+fail:
+    return {
+        error: str
+    }
 
 
 
-# Получить пользователя
+# Получить пользователя ?
 GET /api/user/get
 body {
     id: int
@@ -102,7 +107,7 @@ result {
 
 
 # Авторизация
-POST /api/auth/login
+POST /api/auth
 body {
     login: str,
     passhash: str
@@ -120,7 +125,7 @@ fail:
 
 
 # Добавить исполнителя
-POST /api/user/add
+POST /api/user/add_operator
 body {
     name: str,
     role: id
@@ -149,8 +154,8 @@ return {
 
 
 
-# Установить роль
-POST /api/role/set
+# Добавить роль
+POST /api/role/add
 body {
     id: str
 }

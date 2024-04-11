@@ -15,7 +15,7 @@ files:
 
         *folders*:
             task_id
-                file
+                file_name
 
 
 users:

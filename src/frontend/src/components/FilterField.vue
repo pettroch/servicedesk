@@ -1,19 +1,11 @@
 <template>
     <div class="relative">
-        <div class="inline-flex items-center overflow-hidden rounded-lg border bg-white">
-            <a
-            href="#"
-            class="flex w-32 justify-center items-center text-center px-4 py-2 text-sm/none text-gray-600 hover:bg-gray-50 hover:text-gray-700"
-            >
-                <img src="/filter.svg" class="w-5 mr-1" />
-            Фильтр
-            </a>
-
-            <button class="h-full p-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700">
-            <span class="sr-only">Menu</span>
+        <button class="inline-flex justify-center items-center border p-2 rounded-lg">
+            <img src="/filter.svg" class="w-5" />
+            <p class="font-mono pl-1">Фильтр</p>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                class="h-4 w-4 ml-4"
                 viewBox="0 0 20 20"
                 fill="currentColor"
             >
@@ -23,8 +15,8 @@
                 clip-rule="evenodd"
                 />
             </svg>
-            </button>
-        </div>
+        </button>
+    </div>
         <!--
         <div
             class="absolute z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
@@ -94,5 +86,4 @@
             </form>
             </div>
         </div> -->
-    </div>
 </template>

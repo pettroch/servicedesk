@@ -1,5 +1,23 @@
 <template>
     <div class="relative">
+        <button class="inline-flex justify-center items-center border p-2 rounded-lg">
+            <img src="/sort.svg" class="w-5" />
+            <p class="font-mono pl-1">Сортировка</p>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+            >
+                <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                />
+            </svg>
+        </button>
+    </div>
+   <!-- <div class="relative">
         <div class="inline-flex items-center overflow-hidden rounded-lg border bg-white">
             <a
             href="#"
@@ -25,7 +43,8 @@
             </svg>
             </button>
         </div>
-        <!--
+        
+        
         <div
             class="absolute z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
             role="menu"
@@ -77,6 +96,6 @@
                 </button>
             </form>
             </div>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 </template>

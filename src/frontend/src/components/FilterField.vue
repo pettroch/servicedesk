@@ -1,6 +1,6 @@
 <template>
     <div class="relative">
-        <button class="inline-flex justify-center items-center border p-2 rounded-lg">
+        <button class="inline-flex justify-center items-center border p-2 rounded-lg hover:bg-gray-50">
             <img src="/filter.svg" class="w-5" />
             <p class="font-mono pl-1">Фильтр</p>
             <svg

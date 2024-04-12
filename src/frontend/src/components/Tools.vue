@@ -2,6 +2,7 @@
     import FilterField from "./FilterField.vue"
     import SortField from "./SortField.vue"
     import SearchField from "./SearchField.vue"
+    import Switch from "./SwitchTools.vue"
 </script>
 
 <template>
@@ -27,6 +28,9 @@
                     Мои заявки
                 </button>
             </div>
+
+            <Switch />
+
         </div>
     </div>
 </template>

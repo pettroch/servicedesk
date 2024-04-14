@@ -6,6 +6,6 @@
             </svg>
         </div>
         <input type="search" id="default-search" class="placeholder:font-mono block w-full p-2 h-full ps-10 text-sm text-gray-900 outline-0 border rounded-lg hover:bg-gray-50" placeholder="Поиск..." />
-        <button type="submit" class="text-white absolute end-2 bottom-2 bg-indigo-500 font-medium rounded-lg text-sm px-4 py-1 hover:bg-indigo-600">Найти</button>
+        <button type="submit" class="text-white absolute end-2 bottom-2 bg-blue-500 font-medium rounded-lg text-sm px-4 py-1 hover:bg-blue-600">Найти</button>
     </div>
 </template>

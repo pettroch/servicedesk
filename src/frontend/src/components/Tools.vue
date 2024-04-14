@@ -17,13 +17,13 @@
             <div class="flex gap-1">
                 <button
                     type="button"
-                    class="flex justify-center items-center pr-1 text-white bg-indigo-500 hover:bg-indigo-600 w-36 font-medium rounded-xl text-sm text-center">
+                    class="flex justify-center items-center pr-1 text-white bg-blue-500 hover:bg-blue-600 w-36 font-medium rounded-xl text-sm text-center">
                     <img src="/plus.svg" class="w-5" />
                     Создать заявку
                 </button>
                 <button
                     type="button"
-                    class="flex justify-center items-center text-white bg-indigo-500 hover:bg-indigo-600 w-36 font-medium rounded-xl text-sm text-center">
+                    class="flex justify-center items-center text-white bg-blue-500 hover:bg-blue-600 w-36 font-medium rounded-xl text-sm text-center">
                     <img src="/my_tasks_btn.svg" class="w-5 mr-1" />
                     Мои заявки
                 </button>

@@ -1,5 +1,5 @@
 # Создать заявку +
-POST /api/task/create
+POST /api/tasks/create
 body {
     name: str,
     description: str,
@@ -17,11 +17,7 @@ return {
 
 
 # Получить заявку по айди +
-GET /api/task/get
-body {
-    task_id: int
-}
-
+GET /api/tasks/?id={id}
 return {
     name: str,
     description: str,
@@ -30,30 +26,6 @@ return {
     files: [], -
     user_id: id,
     contractor_id: id
-}
-
-
-
-# Получить заявки по юзеру +
-GET /api/task/by_user
-body {
-    user_id: id
-}
-
-return {
-    task_ids: []
-}
-
-
-
-# Получить заявки по исполнителю +
-GET /api/task/by_contractor
-body {
-    contractor_id: int
-}
-
-return {
-    task_ids: []
 }
 
 
@@ -94,11 +66,7 @@ fail:
 
 
 # Получить пользователя ?
-GET /api/user/get
-body {
-    id: int
-}
-
+GET /api/users/?id={id}
 result {
     name: str,
     role: id
@@ -143,11 +111,7 @@ fail:
 
 
 # Получить роль
-GET /api/role/get
-body {
-    name: int
-}
-
+GET /api/role?name={name}
 return {
     id: str  
 }

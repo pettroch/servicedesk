@@ -8,7 +8,7 @@ from .models.task import Task
 from .models.user import User
 
 
-engine = create_engine('sqlite:///servicedesk.db')
+engine = create_engine('sqlite:///src/backend/database/servicedesk.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 

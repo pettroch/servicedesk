@@ -15,9 +15,52 @@ return {
 }
 
 
+# Получить все заявки
+GET /api/tasks
+return {
+    [
+        {
+            id: int,
+            name": str,
+            description: str,
+            creator_id: int,
+            operator_id: int,
+            date: str,
+            status_id: int
+        },
+    ]
+}
+
+
 
 # Получить заявку по айди +
-GET /api/tasks/?id={id}
+GET /api/tasks?id={id}
+return {
+    name: str,
+    description: str,
+    status: id,
+    date: str,
+    files: [], -
+    user_id: id,
+    contractor_id: id
+}
+
+
+# Получить заявку по отправителю
+GET /api/tasks?creator_id={id}
+return {
+    name: str,
+    description: str,
+    status: id,
+    date: str,
+    files: [], -
+    user_id: id,
+    contractor_id: id
+}
+
+
+# Получить заявку по оператору
+GET /api/tasks?operator_id={id}
 return {
     name: str,
     description: str,
@@ -31,7 +74,7 @@ return {
 
 
 # Изменить статус заявки
-POST /api/status/set
+PUT /api/status/set
 body {
     task_id: int,
     status_id: id
@@ -66,7 +109,7 @@ fail:
 
 
 # Получить пользователя ?
-GET /api/users/?id={id}
+GET /api/users?id={id}
 result {
     name: str,
     role: id
